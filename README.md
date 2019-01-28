@@ -1,3 +1,3 @@
 # pax
 
-Pax is latin for Peace. Pax is a one-page web application developed to relieve stress and foster creativity while working.
+Pax is latin for Peace. Pax is a one page web application using HTML, Sass, and JavaScript. Pax was developed to relieve stress and foster creativity while working.
