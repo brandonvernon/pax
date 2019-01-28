@@ -96,13 +96,13 @@ function checkNight() {
 function randomBG() {
   let html = document.querySelector('html');
   let bgArray = [
-    "url('unknown/css/img/mountain.jpeg') no-repeat",
-    "url('unknown/css/img/stars.jpeg') no-repeat",
-    "url('unknown/css/img/beach.jpeg') no-repeat",
-    "url('unknown/css/img/bullcreek.jpg') no-repeat",
-    "url('unknown/css/img/sculpturefalls.jpg') no-repeat",
-    "url('unknown/css/img/clouds.jpg') no-repeat",
-    "url('unknown/css/img/hallstatt.jpg') no-repeat"
+    "url('pax/css/img/mountain.jpeg') no-repeat",
+    "url('pax/css/img/stars.jpeg') no-repeat",
+    "url('pax/css/img/beach.jpeg') no-repeat",
+    "url('pax/css/img/bullcreek.jpg') no-repeat",
+    "url('pax/css/img/sculpturefalls.jpg') no-repeat",
+    "url('pax/css/img/clouds.jpg') no-repeat",
+    "url('pax/css/img/hallstatt.jpg') no-repeat"
   ];
   let selectRandom = bgArray[Math.floor(Math.random()*bgArray.length)];
   html.style.background = selectRandom;
