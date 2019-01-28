@@ -1,0 +1,168 @@
+html{
+  width: 100%;
+  height: 100%;
+  background: url("img/stars.jpeg") no-repeat;
+  background-size: cover;
+  cursor: url('img/cursor-small.png') 16 16, auto;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  animation-name: bgfade;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+
+  @keyframes bgfade{
+    from{background-color: transparent;}
+    40%{background-color: transparent;}
+    48%{background-color: #000000;}
+    52%{background-color: #000000;}
+    60%{background-color: transparent;}
+    to{background-color: transparent;}
+  }
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+  margin: 5vh auto 0 auto;
+  width: 90vw;
+  max-width: 999px;
+  height: 90vh;
+  border: 1px solid #000000;
+  border-spacing: 0px;
+
+  #container-column-1, #container-column-2, #container-column-3{
+    width: 30vw;
+    max-width: 333px;
+    height: 90vh;
+
+    #pixelCanvas1, #pixelCanvas2, #pixelCanvas3,
+    #pixelCanvas4, #pixelCanvas5, #pixelCanvas6,
+    #pixelCanvas7, #pixelCanvas8, #pixelCanvas9{
+      margin: 0 auto 0 auto;
+      width: 30vw;
+      max-width: 333px;
+      height: 30vh;
+      border: 1px solid #FF000000;
+      border-spacing: 0px;
+
+      .activated{
+        position: absolute;
+        height: 2px;
+        width: 2px;
+        border-radius: 50%;
+        animation-name: fade;
+        animation-duration: 5s;
+      }
+
+      .activatedlight{
+        position: absolute;
+        height: 2px;
+        width: 2px;
+        border-radius: 50%;
+        animation-name: fadelight;
+        animation-duration: 5s;
+      }
+
+      .activateddark{
+        position: absolute;
+        height: 2px;
+        width: 2px;
+        border-radius: 50%;
+        animation-name: fadedark;
+        animation-duration: 5s;
+      }
+
+      @keyframes fade{
+        from{
+          background-color: rgb(250, 19, 149);
+          box-shadow: 0px 0px 0px 0px #ffffff;
+          transform: scale(1);
+        }
+        25%{
+          background-color: rgba(115, 56, 207, 0.9);
+          transform: scale(15);
+        }
+        34%{background-color: rgba(42, 83, 234, 0.8);}
+        42%{background-color: rgba(9, 137, 203, 0.7);}
+        50%{
+          background-color: rgba(7, 171, 171, 0.6);
+          box-shadow: 0px 0px 0.1px 0px #ffffff;
+        }
+        58%{background-color: rgba(10, 219, 120, 0.5);}
+        66%{background-color: rgba(94, 220, 58, 0.4);}
+        75%{background-color: rgba(241, 168, 8, 0.3);}
+        to{
+          background-color: rgba(242, 102, 72, 0.2);
+          box-shadow: 0px 0px 0px 0px #ffffff;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes fadelight{
+        from{
+          background-color: rgb(255, 96, 226);
+          box-shadow: 0px 0px 0px 0px #ffffff;
+          transform: scale(1);
+        }
+        25%{
+          background-color: rgba(192, 133, 255, 0.9);
+          transform: scale(15);
+        }
+        34%{background-color: rgba(119, 160, 255, 0.8);  }
+        42%{background-color: rgba(86, 214, 255, 0.7);}
+        50%{
+          background-color: rgba(84, 248, 248, 0.6);
+          box-shadow: 0px 0px 0.1px 0px #ffffff;
+        }
+        58%{background-color: rgba(87, 255, 197, 0.5);}
+        66%{background-color: rgba(171, 255, 135, 0.4);}
+        75%{background-color: rgba(255, 245, 85, 0.3);}
+        to{
+          background-color: rgba(255, 179, 149, 0.2);
+          box-shadow: 0px 0px 0px 0px #ffffff;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes fadedark{
+        from{
+          background-color: rgb(174, 0, 73);
+          box-shadow: 0px 0px 0px 0px #ffffff;
+          transform: scale(1);
+        }
+        25%{
+          background-color: rgba(39, 0, 131, 0.9);
+          transform: scale(15);
+        }
+        34%{background-color: rgba(0, 7, 158, 0.8);}
+        42%{background-color: rgba(0, 61, 127, 0.7);}
+        50%{
+          background-color: rgba(0, 95, 95, 0.6);
+          box-shadow: 0px 0px 0.1px 0px #ffffff;
+        }
+        58%{background-color: rgba(0, 143, 44, 0.5);}
+        66%{background-color: rgba(18, 144, 0, 0.4);}
+        75%{background-color: rgba(165, 92, 0, 0.3);}
+        to{
+          background-color: rgba(166, 26, 0, 0.2);
+          box-shadow: 0px 0px 0px 0px #ffffff;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+audio {
+  display: block;
+  margin: 1vh auto 0 auto;
+  height: 3vh;
+
+}
